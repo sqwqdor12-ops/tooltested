@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0"><channel>
+<title>ToolTested</title>
+<link>https://sqwqdor12-ops.github.io/tooltested/</link>
+<description>Hands-on AI tool guides that actually work</description>
+<item><title>How to Use Google NotebookLM to Summarize PDFs (Step-by-Step)</title><link>https://sqwqdor12-ops.github.io/tooltested/notebooklm-summarize-pdfs/</link><description>A hands-on walkthrough of Google NotebookLM for PDF summarization, including source limits, inline citations, and the exact settings that produce the cleanest summaries.</description><pubDate>2026-09-16</pubDate></item>
+<item><title>Notion AI vs a Plain ChatGPT Sidecar: Which Actually Saves Time?</title><link>https://sqwqdor12-ops.github.io/tooltested/notion-ai-vs-chatgpt-sidecar/</link><description>I ran my real notes-and-tasks workflow through both setups for two weeks. Here is exactly where Notion AI wins, where it wastes money, and the hybrid setup that beat both.</description><pubDate>2026-09-12</pubDate></item>
+<item><title>The Free AI Stack for Job Hunting in 2026 (Resume to Interview Prep)</title><link>https://sqwqdor12-ops.github.io/tooltested/free-ai-stack-job-hunting/</link><description>A complete, zero-cost workflow: which free AI tools actually help with resume tailoring, cover letters, and interview practice, and the exact prompts that worked.</description><pubDate>2026-09-08</pubDate></item>
+</channel></rss>

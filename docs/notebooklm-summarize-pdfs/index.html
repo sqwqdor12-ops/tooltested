@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>How to Use Google NotebookLM to Summarize PDFs (Step-by-Step)</title>
+<meta name="description" content="A hands-on walkthrough of Google NotebookLM for PDF summarization, including source limits, inline citations, and the exact settings that produce the cleanest summaries.">
+<link rel="canonical" href="https://sqwqdor12-ops.github.io/tooltested/notebooklm-summarize-pdfs/">
+<meta property="og:type" content="article">
+<meta property="og:title" content="How to Use Google NotebookLM to Summarize PDFs (Step-by-Step)">
+<meta property="og:description" content="A hands-on walkthrough of Google NotebookLM for PDF summarization, including source limits, inline citations, and the exact settings that produce the cleanest summaries.">
+<meta property="og:url" content="https://sqwqdor12-ops.github.io/tooltested/notebooklm-summarize-pdfs/">
+<meta property="og:site_name" content="ToolTested">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="How to Use Google NotebookLM to Summarize PDFs (Step-by-Step)">
+<meta name="twitter:description" content="A hands-on walkthrough of Google NotebookLM for PDF summarization, including source limits, inline citations, and the exact settings that produce the cleanest summaries.">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"TechArticle","headline":"How to Use Google NotebookLM to Summarize PDFs (Step-by-Step)","description":"A hands-on walkthrough of Google NotebookLM for PDF summarization, including source limits, inline citations, and the exact settings that produce the cleanest summaries.","datePublished":"2026-09-16","dateModified":"2026-09-16","author":{"@type":"Organization","name":"ToolTested"},"publisher":{"@type":"Organization","name":"ToolTested"},"mainEntityOfPage":"https://sqwqdor12-ops.github.io/tooltested/notebooklm-summarize-pdfs/"}</script>
+<style>
+:root{--bg:#faf9f7;--fg:#1a1a1a;--muted:#666;--accent:#0b57d0;--card:#fff;--border:#e5e2dd;--code:#f2f0ec}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font:400 17px/1.7 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif;background:var(--bg);color:var(--fg)}
+.wrap{max-width:720px;margin:0 auto;padding:0 20px}
+header.site{border-bottom:1px solid var(--border);padding:20px 0;margin-bottom:40px}
+header.site .wrap{display:flex;justify-content:space-between;align-items:baseline;flex-wrap:wrap;gap:8px}
+.logo{font-weight:800;font-size:1.35rem;color:var(--fg);text-decoration:none;letter-spacing:-.02em}
+.logo span{color:var(--accent)}
+.tagline{color:var(--muted);font-size:.9rem}
+h1{font-size:1.9rem;line-height:1.25;letter-spacing:-.02em;margin-bottom:12px}
+h2{font-size:1.45rem;margin:2em 0 .6em;letter-spacing:-.01em}
+h3{font-size:1.15rem;margin:1.6em 0 .5em}
+p{margin-bottom:1em}
+a{color:var(--accent)}
+ul{margin:0 0 1em 1.2em}
+li{margin-bottom:.4em}
+blockquote{border-left:4px solid var(--accent);padding:.4em 1em;margin:1.2em 0;color:var(--muted);background:var(--card);border-radius:0 8px 8px 0}
+code{background:var(--code);padding:.15em .4em;border-radius:4px;font-size:.9em}
+pre{background:var(--code);padding:16px;border-radius:8px;overflow-x:auto;margin:1.2em 0}
+pre code{padding:0;background:none}
+article.post{margin-bottom:44px;padding-bottom:44px;border-bottom:1px solid var(--border)}
+article.post time{color:var(--muted);font-size:.85rem;text-transform:uppercase;letter-spacing:.05em}
+article.post .excerpt{color:var(--muted);margin-top:.4em}
+.readmore{font-weight:600}
+.meta{color:var(--muted);font-size:.9rem;margin-bottom:28px}
+.toc{background:var(--card);border:1px solid var(--border);border-radius:10px;padding:18px 22px;margin:28px 0}
+.toc strong{display:block;margin-bottom:6px}
+.toc ul{margin-left:1.2em}
+footer.site{border-top:1px solid var(--border);padding:32px 0 48px;margin-top:40px;color:var(--muted);font-size:.9rem}
+.kicker{color:var(--accent);font-weight:700;font-size:.8rem;text-transform:uppercase;letter-spacing:.08em;margin-bottom:6px}
+@media (prefers-color-scheme:dark){:root{--bg:#141414;--fg:#eaeaea;--muted:#999;--card:#1e1e1e;--border:#2c2c2c;--code:#242424}}
+</style>
+</head>
+<body>
+<header class="site"><div class="wrap"><a class="logo" href="/">Tool<span>Tested</span></a><span class="tagline">Hands-on AI tool guides that actually work</span></div></header>
+<main class="wrap">
+<h1>How to Use Google NotebookLM to Summarize PDFs (Step-by-Step)</h1><p class="meta"><time datetime="2026-09-16">2026-09-16</time> &middot; ToolTested</p><p>NotebookLM is the most underused summarization tool on the internet, mostly because people try to use it like ChatGPT. It is not a chatbot. It is a <strong>source-grounded research assistant</strong>: it can only answer from the documents you upload, which is exactly why its summaries are clean and hallucination-free.</p>
+<h2>1. Create a notebook and upload your sources</h2>
+<p>Go to NotebookLM and click <strong>Create new notebook</strong>. Drag your PDFs in. The free tier allows <strong>50 sources per notebook</strong>, and each source can be up to 500,000 words — far more than most people need.</p>
+<p>Upload tips that matter:</p>
+<ul>
+<li>Scanned PDFs need to be OCR&#x27;d first — NotebookLM reads text, not images of text</li>
+<li>Combine chapters of the same book into one source if you want cross-chapter answers</li>
+<li>Audio files are supported too, and it transcribes them automatically</li>
+</ul>
+<h2>2. Generate the starter summary</h2>
+<p>When you upload a source, NotebookLM auto-generates a summary with key topics. Do not stop there. Open the chat and ask for a structured one:</p>
+<pre><code>Summarize this document as: 1) a one-paragraph abstract, 2) the 5 main
+arguments with inline citations, 3) any claims the author hedges on.</code></pre>
+<p>The magic is the <strong>inline citations</strong>. Every claim links back to the exact passage it came from, so you can verify in one click.</p>
+<h2>3. Turn it into study material</h2>
+<p>This is where NotebookLM beats every other summarizer:</p>
+<ul>
+<li><strong>Audio Overview</strong>: generates a podcast-style discussion of your document. Genuinely good for commuting.</li>
+<li><strong>Study guide</strong>: instant flashcards and quiz questions from the source</li>
+<li><strong>FAQ and timeline</strong>: auto-generated views of the same document</li>
+</ul>
+<h2>4. What it refuses to do</h2>
+<p>It will not answer anything outside your sources. Ask it a general question and it will tell you to enable &quot;chat beyond sources&quot; — which hands the question to standard Gemini search instead. For summarization work, keep that off.</p>
+<h2>Verdict</h2>
+<p>For digesting dense PDFs — research papers, legal docs, textbooks — NotebookLM is the fastest path from &quot;I have 80 pages&quot; to &quot;I understand this.&quot; Free, no prompt engineering needed, and the citations make it trustworthy. Stop pasting PDFs into chatbots.</p>
+</main>
+<footer class="site"><div class="wrap"><p>ToolTested &mdash; Hands-on AI tool guides that actually work. Independent, hands-on, no affiliate fluff.</p><p><a href="/rss.xml">RSS</a> &middot; <a href="/sitemap.xml">Sitemap</a></p></div></footer>
+</body>
+</html>

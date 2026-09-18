@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://sqwqdor12-ops.github.io/tooltested/sitemap.xml
